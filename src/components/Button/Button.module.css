@@ -1,0 +1,22 @@
+.button {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff;
+    background: #7b6ef6;
+    border: 2px solid #7b6ef6;
+    border-radius: 12px;
+    padding: 16px 32px;
+    transition: 0.2s;
+    white-space: nowrap;
+}
+
+.button:hover {
+    background: rgb(123, 110, 225);
+    cursor: pointer;
+}
+
+.button:active{
+    transform: scale(0.95);
+}

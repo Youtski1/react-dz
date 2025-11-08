@@ -1,0 +1,14 @@
+.button_link {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #a8aebf;
+}
+
+
+.button_link:hover {
+    color: #fff;
+    cursor: pointer;
+}
