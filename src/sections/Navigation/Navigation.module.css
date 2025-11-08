@@ -1,0 +1,35 @@
+
+
+.navigation__list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+
+.navigation__element--user {
+    display: flex;
+    align-items: center;
+}
+.navigation__element--user::after {
+    content: url('../../../public/user.svg');
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.navigation__element:first-child{
+    position: relative;
+    margin-right: auto;
+    right: 40px;
+}
+
+.navigation__element:last-child::after{
+    content: url("../../../public/login.svg");
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.navigation__element:last-child{
+    display: flex;
+    align-items: center;
+}
