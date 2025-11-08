@@ -27,7 +27,7 @@ function useUserProfile() {
         const userID = users.findIndex(user => user.name == name);
 
         
-        if (!userID == -1)
+        if (userID == -1)
             return;
 
         return users[userID];

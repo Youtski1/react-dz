@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import style from "./InputField.module.css"
 import cn from "classnames";
+import { forwardRef } from "react";
 
-function InputField({ valid=true, placeholder, width, height, iconSearch=false, onChage, ...props }) {
+const InputField = forwardRef(function InputField({ valid=true, placeholder, width, height, iconSearch=false, onChage, ...props }, ref) {
 
     return (
         <>
@@ -20,6 +21,6 @@ function InputField({ valid=true, placeholder, width, height, iconSearch=false, 
             />
         </>
     );
-};
+});
 
 export default InputField;
