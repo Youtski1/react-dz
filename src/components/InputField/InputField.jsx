@@ -10,6 +10,7 @@ const InputField = forwardRef(function InputField({ valid=true, placeholder, wid
             {iconSearch && <img className={style["input_icon"]} src="/public/icon_search.svg" alt="" />}
             <input
             {...props}
+            ref={ref}
             className={cn(style['input_field'], {[style["input_field--movie-search"]]: iconSearch}, {[style["invalid"]]: !valid})}
             placeholder={placeholder}
             type="search"
