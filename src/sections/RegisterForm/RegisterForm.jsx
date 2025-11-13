@@ -6,13 +6,15 @@ import Heading from "../../components/Heading/Heading";
 import useUserProfile from "../../hooks/useUserProfile.hook";
 
 import style from "./RegisterForm.module.css";
+import useUserContext from "../../contexts/user_context";
 
 
 
 
-function RegisterForm({ entranceUser }) {
+function RegisterForm() {
 
     const [getUser, joinUser, ] = useUserProfile();
+    const { setUser } = useUserContext();
     const [valid, setValid] = useState(true);
     const nameRef = useRef();
    
@@ -32,7 +34,7 @@ function RegisterForm({ entranceUser }) {
         }
         else {
             joinUser(name);
-            entranceUser(getUser(name));
+            setUser(getUser(name));
         }
     } 
 
