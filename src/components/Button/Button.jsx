@@ -6,6 +6,7 @@ const Button = forwardRef(function Button({ width, hight, text, onClick }, ref) 
     return (
     <button
     className={style.button}
+    ref={ref}
     onClick={onClick}
     style={{
         width:width,

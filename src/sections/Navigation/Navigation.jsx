@@ -1,9 +1,15 @@
 import style from "./Navigation.module.css";
 import ButtonLink from "../../components/ButtonLink/ButtonLink";
 import { use } from "react";
+import useUserContext from "../../contexts/user_context";
+import useUserProfile from "../../hooks/useUserProfile.hook";
 
 
-function Navigation({ user, leaveUser  }) {
+function Navigation() {
+
+    const [,,leaveUser] = useUserProfile();
+    const { user, setUser } = useUserContext();
+
 
     return (
         <nav className={style.navigation}>
@@ -31,7 +37,7 @@ function Navigation({ user, leaveUser  }) {
                     </li>
                 }
                 <li className={style["navigation__element"]}>
-                    {user ? <ButtonLink onClick={leaveUser}>Выйти</ButtonLink> : <ButtonLink>Войти</ButtonLink>}
+                    {user ? <ButtonLink onClick={() => {leaveUser(user.name); setUser(null)}}>Выйти</ButtonLink> : <ButtonLink>Войти</ButtonLink>}
                 </li>
             </ul>
         </nav>

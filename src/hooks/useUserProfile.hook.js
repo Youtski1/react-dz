@@ -1,3 +1,4 @@
+import useUserContext from "../contexts/user_context";
 import useLocalStorage from "./uselocalStorage.hook"
 import { useEffect, useState, useRef } from "react"
 
@@ -17,8 +18,10 @@ function useUserProfile() {
         if (users.length){ 
             usersRef.current = users
             set(users);
+
         }
     }, [users]);
+
 
     const getUser = (name) => {
         if (!users)
