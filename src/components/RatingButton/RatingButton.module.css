@@ -1,0 +1,32 @@
+
+.rating_button{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 45px;
+    left: 15px;
+    border-radius: 8px;
+    padding: 4px 8px;
+    width: 65px;
+    height: 32px;
+    backdrop-filter: blur(8px);
+    background: rgba(0, 0, 0, 0.65);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #ffad49;
+}
+
+.rating_button::before {
+    margin-top: 2px;
+    content: url("../../../public/star.svg");
+}
+
+.rating_button:hover{
+    cursor: pointer;
+    color: rgb(255, 173, 140);
+}
