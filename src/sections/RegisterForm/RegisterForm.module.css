@@ -1,0 +1,11 @@
+.register-user {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2  5px;
+}
