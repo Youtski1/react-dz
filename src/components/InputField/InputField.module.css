@@ -1,5 +1,11 @@
 
-.input_field {
+
+.input_field{
+    position: relative;
+}
+
+
+.input {
     border: 1px solid #323b54;
     border-radius: 12px;
     padding: 12px 16px;
@@ -26,13 +32,13 @@
 
 .input_icon{
     position: absolute;
-    top: 357px;
-    left: 215px;
+    top: 18px;
+    left: 15px;
 }
 
 
 .input_field--movie-search{
-    padding-left: 5%;
+    padding-left: 15%;
 }
 
 

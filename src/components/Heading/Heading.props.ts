@@ -2,6 +2,6 @@ import type { ReactNode } from "react";
 
 export interface HeadingProps {
     children: ReactNode,
-    hight?: string,
+    height?: string,
     width?: string
 }

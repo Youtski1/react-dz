@@ -9,9 +9,7 @@ function BoardCardMovie({ movies }: BoardCardMovieProps) {
         <ol className={style["list_card_movies"]}>
             {movies.map(movie => (
                 <li className={style["list__element"]} key={movie.id}>
-                    <CardMovie 
-                        movie={movie}
-                    />
+                    <CardMovie movie={movie}/>
                 </li>
             ))}
         </ol>

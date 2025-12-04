@@ -1,0 +1,31 @@
+.button {
+    background: none;
+    border: none;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #7b6ef6;
+    transition: 0.3s;
+}
+
+.fovourite_button {
+    display: flex;
+}
+
+.button:hover {
+    cursor: pointer;
+    color: rgb(123, 110, 190);
+}
+
+
+
+
+.active {
+    color: #37d8a7;
+}
+
+.active:hover {
+    color: #bfe9dd;
+}

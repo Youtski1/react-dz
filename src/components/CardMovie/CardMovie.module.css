@@ -1,4 +1,4 @@
-.card_movie {
+.card {
     display: flex;
     flex-direction: column;
     border-radius: 12px;
@@ -9,7 +9,7 @@
     background: rgba(32, 40, 62, 0.8);
 }   
 
-.card_movie__title {
+.card__title {
     margin-left: 10px;
     font-family: var(--font-family);
     text-align: start;
@@ -20,12 +20,16 @@
     color: #ebeef5;
 }
 
-.card_movie__img {
+.card__img {
     width: 266px;
     height: 400px;
 }
 
-.card_movie__button{
+.card_favourite-btn {
+    padding: 10px;
+}
+
+.card__button{
     margin-left: 10px;
     display: flex;
     align-items: center;
@@ -39,13 +43,16 @@
     transition: 0.3s;
 }
 
+.link {
+    text-decoration: none;
+}
 
-.card_movie__button:hover {
+.card__button:hover {
     cursor: pointer;
     color: rgb(123, 110, 190);
 }
 
-.card_movie__button::before{
+.card_button::before{
     margin-top: 5px;
     content: url("../../../public/like.svg");
 }
