@@ -1,0 +1,14 @@
+
+
+
+.favourite {
+    margin-top: 48px;
+}
+
+.favourite{
+    margin-top: 100px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}

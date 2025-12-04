@@ -1,11 +1,13 @@
+import type { BodyProps } from "./Body.props";
 
-function Body({ children }) {
+
+function Body({ children }: BodyProps) {
 
     return (
         <main>
             {children}
         </main>
-    )
+    );
 }
 
 

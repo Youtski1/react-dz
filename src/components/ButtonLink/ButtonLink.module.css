@@ -5,10 +5,15 @@
     line-height: 150%;
     letter-spacing: 0.02em;
     color: #a8aebf;
+    text-decoration: none;
 }
 
 
 .button_link:hover {
     color: #fff;
     cursor: pointer;
+}
+
+.active {
+    color: white;
 }
